@@ -3,27 +3,43 @@
 /* Hero */
 .hero-title {
   color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
 }
 
 /* Section */
 .section-title {
   color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
 }
 
-/* Features */
-.feature-list .title {
-  color: var(--title-text-color);
+.section-description {
+  font-size: 36px;
+  line-height: 1.39;
 }
 
-/* Examples */
+/* Features and Examples */
+.feature-list .title,
 .work-list .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 /* Button */
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .button.primary {
