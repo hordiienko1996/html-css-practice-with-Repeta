@@ -1,24 +1,47 @@
 /* Стили для index.html */
 
 /* Hero */
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 40;
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
-  text-align: center;
 }
 
 /* Section */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 60px;
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 48px;
   line-height: 1.5;
+}
+
+.section-title.centered {
   text-align: center;
 }
 
 .section-description {
+  margin-top: 0;
+  margin-bottom: 80px;
   font-size: 36px;
   line-height: 1.39;
 }
@@ -26,14 +49,40 @@
 /* Features and Examples */
 .feature-list .title,
 .work-list .title {
+  margin-top: 0;
+  margin-bottom: 24px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
 }
 
+/* Works */
+
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--primary-white-color);
+}
+
+.work-list > .item:nth-child(2n) {
+  background-color: var(--secondary-bg-color);
+}
+
+.feature-list p {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
 /* Button */
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 11px 34px; 
+  min-width: 130px;
+  text-align: center;
+
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
   font-weight: 500;
@@ -50,6 +99,7 @@
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+  border-color: var(--accent-color);
 }
 
 /* Стили для community.html */
