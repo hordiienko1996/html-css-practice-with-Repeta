@@ -20,22 +20,24 @@
   <body class="page">
     <!-- Шапка сайта -->
     <header>
-      <nav class="container">
+      <nav class="container main-nav">
         <a href="./index.html" class="logo">
           <img src="./images/logo.svg" alt="Логотип компании" />
           photo
         </a>
 
         <ul class="site-nav list">
-          <li><a href="" class="link current">Features</a></li>
-          <li><a href="" class="link">Pricing</a></li>
-          <li><a href="./community.html" class="link">Community</a></li>
-          <li><a href="" class="link">Support</a></li>
+          <li class="item"><a href="" class="link current">Features</a></li>
+          <li class="item"><a href="" class="link">Pricing</a></li>
+          <li class="item">
+            <a href="./community.html" class="link">Community</a>
+          </li>
+          <li class="item"><a href="" class="link">Support</a></li>
         </ul>
 
-        <ul class="auto-nav list">
-          <li><a href="" class="button secondary">Log in</a></li>
-          <li><a href="" class="button primary">Register</a></li>
+        <ul class="auth-nav list">
+          <li class="item"><a href="" class="button secondary">Log in</a></li>
+          <li class="item"><a href="" class="button primary">Register</a></li>
         </ul>
       </nav>
     </header>
@@ -56,7 +58,7 @@
           </h2>
 
           <ul class="feature-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Sed ut perspiciatis</h3>
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -66,7 +68,7 @@
               <a href="" class="button secondary">Learn more</a>
             </li>
 
-            <li>
+            <li class="item">
               <h3 class="title">Lorem ipsum dolor</h3>
               <p>
                 Amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -76,7 +78,7 @@
               <a href="" class="button secondary">Learn more</a>
             </li>
 
-            <li>
+            <li class="item">
               <h3 class="title">Nemo enim ipsam</h3>
               <p>
                 Consequuntur magni dolores eos qui ratione voluptatem sequi
@@ -86,7 +88,7 @@
               <a href="" class="button secondary">Learn more</a>
             </li>
 
-            <li>
+            <li class="item">
               <h3 class="title">Tempor incididunt</h3>
               <p>
                 Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
@@ -111,13 +113,15 @@
                 alt="Пример работ"
                 width="750"
               />
-              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div class="content">
+                <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem.
+                </p>
+              </div>
             </li>
 
             <li class="item">
@@ -126,13 +130,15 @@
                 alt="Пример работ"
                 width="750"
               />
-              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div class="content">
+                <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -142,12 +148,12 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title centered">You’re in good company</h2>
-          <p class="section-description">
+          <p class="section-description centered">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore
           </p>
 
-          <ul class="list">
+          <ul class="client-list list">
             <li>
               <a href=""
                 ><img src="./images/icon.svg" alt="Логотип компании"
@@ -192,7 +198,7 @@
         </div>
       </section>
 
-      <!-- Signup -->
+      <!-- Sign up -->
 
       <section class="section">
         <div class="container">
