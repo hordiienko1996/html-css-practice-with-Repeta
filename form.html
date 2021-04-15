@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form class="form js-speaker-form">
+    <!-- 13.04
+      <form class="form js-speaker-form">
       <div class="form-field">
         <label for="name">Имя</label>
         <input
@@ -101,9 +102,116 @@
       </div>
 
       <button type="submit">Оставить заявку</button>
+    </form> -->
+
+    <!-- Crossbrowser
+      <form class="form" autocomplete="off">
+      <div class="form-field">
+        <input
+          type="text"
+          class="form-input"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+        <label for="name" class="form-label">Имя</label>
+        <span class="icon"></span>
+      </div>
+
+      <div class="form-field">
+        <input
+          type="email"
+          class="form-input"
+          name="mail"
+          id="mail"
+          placeholder=" "
+        />
+        <label for="mail" class="form-label">Почта</label>
+        <span class="icon"></span>
+      </div>
+
+      <button type="submit">Оставить заявку</button>
+    </form> -->
+
+    <!-- Modern-styles
+    <form class="form" autocomplete="off">
+      <div class="form-field">
+        <span class="icon"></span>
+        <input
+          type="text"
+          class="form-input"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+        <label for="name" class="form-label">Имя</label>
+      </div>
+
+      <div class="form-field">
+        <span class="icon"></span>
+        <input
+          type="email"
+          class="form-input"
+          name="mail"
+          id="mail"
+          placeholder=" "
+        />
+        <label for="mail" class="form-label">Почта</label>
+      </div>
+
+      <button type="submit">Оставить заявку</button>
+    </form> -->
+
+    <!-- Nested
+    <form class="form" autocomplete="off">
+      <label class="form-field">
+        <input type="text" class="form-input" name="name" placeholder=" " />
+        <span class="form-label">Имя</span>
+        <span class="icon"></span>
+      </label>
+
+      <label class="form-field">
+        <input type="email" class="form-input" name="mail" placeholder=" " />
+        <span class="form-label">Почта</span>
+        <span class="icon"></span>
+      </label>
+
+      <button type="submit">Оставить заявку</button>
+    </form>-->
+
+    <!-- Customn -->
+    <form class="form">
+      <ul>
+        <li>
+          <label class="field">
+            <input class="checkbox" type="checkbox" name="topic" value="html" />
+            <span class="icon"></span>
+            <span class="label">HTML</span>
+          </label>
+        </li>
+
+        <li>
+          <label class="field">
+            <input class="checkbox" type="checkbox" name="topic" value="css" />
+            <span class="icon"></span>
+            <span class="label">CSS</span>
+          </label>
+        </li>
+
+        <li>
+          <label class="field">
+            <input class="checkbox" type="checkbox" name="topic" value="js" />
+            <span class="icon"></span>
+            <span class="label">JavaScript</span>
+          </label>
+        </li>
+      </ul>
+
+      <button type="submit">Оставить заявку</button>
     </form>
 
     <!-- Scrirt -->
+
     <script>
       (() => {
         document

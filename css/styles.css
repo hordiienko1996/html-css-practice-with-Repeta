@@ -9,7 +9,7 @@ body {
   color: #2a2a2a;
 }
 
-textarea {
+/* textarea {
   resize: none;
 }
 
@@ -22,8 +22,8 @@ textarea {
 }
 
 .form-field {
-  /* outline: 1px solid blue; */
-  display: flex;
+  outline: 1px solid blue; 
+ display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
@@ -81,4 +81,213 @@ textarea {
 
 .form .comment {
   padding: 8px;
+} 
+
+
+#1
+.form {
+  padding: 20px;
+  margin: 20px;
+  width: 600px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 40px;
+  padding-left: 40px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: tomato;
+  transform: translateY(-50px);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+
+.form-input:focus ~ .icon {
+  background-color: blue;
+}*/
+
+/* #2 
+.form {
+  padding: 20px;
+  margin: 20px;
+  width: 600px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 40px;
+  padding-left: 40px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+
+.form-field:focus-within > .icon {
+  background-color: blue;
+}
+
+.form-field:focus-within > .form-label {
+  transform: translateY(-50px);
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-50px); */
+
+/* #3 
+
+.form {
+  padding: 20px;
+  margin: 20px;
+  width: 600px;
+}
+
+.form-field {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  padding-left: 40px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+
+.form-field:focus-within > .icon {
+  background-color: blue;
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-50px);
+}*/
+
+/* !Customn! Как прятать checkbox*/
+
+li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.field {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 10px;
+  transition: transform 250ms linear;
+}
+
+.checkbox:checked + .icon {
+  transform: scale(2);
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-image: url(../images/modal-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.label {
+  transition: transform 250ms ease;
+}
+
+.checkbox:checked ~ .label {
+  transform: translateX(20px);
 }
